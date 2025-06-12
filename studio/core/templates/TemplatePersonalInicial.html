@@ -57,41 +57,55 @@
   {% endblock %}
 
   <!-- Main Content -->
- <main class="container text-center py-5">
+  <main class="container text-center py-5">
   <h1 class="mb-5">Olá, PH Personal.</h1>
 
-  <!-- Grid de opções -->
   <div class="row justify-content-center">
+    <!-- Cadastrar Alunos -->
+    <div class="col-12 col-md-6 col-lg-5 mb-4">
+      <a href="{% url 'cadastrarAluno' %}" class="d-block bg-light p-4 rounded shadow-sm h-100 text-decoration-none text-dark">
+        <img src="https://img.icons8.com/ios-filled/100/000000/add-user-male.png" class="mb-3" alt="Cadastrar alunos">
+        <div class="font-weight-bold">Cadastrar alunos</div>
+      </a>
+    </div>
+
+    <!-- Agendar Treinos -->
     <div class="col-12 col-md-6 col-lg-5 mb-4">
       <a href="{% url 'agendarTreino' %}" class="d-block bg-light p-4 rounded shadow-sm h-100 text-decoration-none text-dark">
         <img src="https://img.icons8.com/ios-filled/100/000000/calendar.png" class="mb-3" alt="Agendar treinos">
         <div class="font-weight-bold">Agendar treinos</div>
       </a>
     </div>
+
+    <!-- Administrar Alunos -->
     <div class="col-12 col-md-6 col-lg-5 mb-4">
-      <a href="{% url 'cadastrarAluno' %}" class="d-block bg-light p-4 rounded shadow-sm h-100 text-decoration-none text-dark">
-        <img src="https://img.icons8.com/ios-filled/100/000000/add-user-group-man-man.png" class="mb-3" alt="Cadastrar alunos">
-        <div class="font-weight-bold">Cadastrar alunos</div>
-      </a>
-    </div>
-    <div class="col-12 col-md-6 col-lg-5 mb-4">
-      <a href="{% url 'criarTreino' %}" class="d-block bg-light p-4 rounded shadow-sm h-100 text-decoration-none text-dark">
-        <img src="https://img.icons8.com/?size=100&id=107640&format=png&color=000000" class="mb-3" alt="Criar plano de treino">
-        <div class="font-weight-bold">Criar plano de treino</div>
-      </a>
-    </div>
-    <div class="col-12 col-md-6 col-lg-5 mb-4">
-      <a href="#" class="d-block bg-light p-4 rounded shadow-sm h-100 text-decoration-none text-dark">
-        <img src="https://img.icons8.com/ios-filled/100/000000/deadlift.png" class="mb-3" alt="Acompanhar progresso">
-        <div class="font-weight-bold">Acompanhar progresso</div>
+      <a href="{% url 'administrarAlunos' %}" class="d-block bg-light p-4 rounded shadow-sm h-100 text-decoration-none text-dark">
+        <img src="https://img.icons8.com/ios-filled/100/000000/conference-call.png" class="mb-3" alt="Administrar Alunos">
+        <div class="font-weight-bold">Administrar Alunos</div>
       </a>
     </div>
 
-    <!-- Centralizado na última linha -->
-    <div class="col-12 col-md-6 col-lg-5 mb-4 mx-auto">
+    <!-- Cadastrar Personal -->
+    <div class="col-12 col-md-6 col-lg-5 mb-4">
       <a href="{% url 'cadastrarPersonal' %}" class="d-block bg-light p-4 rounded shadow-sm h-100 text-decoration-none text-dark">
         <img src="https://img.icons8.com/ios-filled/100/000000/biceps.png" class="mb-3" alt="Cadastrar Personal">
         <div class="font-weight-bold">Cadastrar Personal</div>
+      </a>
+    </div>
+
+    <!-- Listar Personais -->
+    <div class="col-12 col-md-6 col-lg-5 mb-4">
+      <a href="{% url 'listarPersonais' %}" class="d-block bg-light p-4 rounded shadow-sm h-100 text-decoration-none text-dark">
+        <img src="https://img.icons8.com/ios-filled/100/000000/biceps.png" class="mb-3" alt="Listar Personais">
+        <div class="font-weight-bold">Listar Personais</div>
+      </a>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="col-12 col-md-6 col-lg-5 mb-4">
+      <a href="{% url 'dashboard' %}" class="d-block bg-light p-4 rounded shadow-sm h-100 text-decoration-none text-dark">
+        <img src="https://img.icons8.com/ios-filled/100/000000/combo-chart--v1.png" class="mb-3" alt="Dashboard">
+        <div class="font-weight-bold">Dashboard</div>
       </a>
     </div>
   </div>
